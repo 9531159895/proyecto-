@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>promocionChevrolet</title>
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.min.css">
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript"  src="js/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="imagenes.css">
+  <script type="text/javascript">
+    $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
+              var next = $(this).next();
+              if (!next.length) {
+                next = $(this).siblings(':first');
+              }
+              next.children(':first-child').clone().appendTo($(this));
+        
+              for (var i=0;i<3;i++) { 
+                next=next.next(); 
+                if (!next.length) { 
+                  next=$(this).siblings(':first'); 
+                }
+                next.children(':first-child').clone().appendTo($(this)); 
+              } 
+            });
+      </script>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-black"  style="background-color: black">
+                <a class="navbar-brand" href="index.html" style="color: #e3f2fd;">Inicio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color: #e3f2fd;">Vehiculos de ocasion</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #e3f2fd;">
+                        
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: black">
+                        <a class="dropdown-item" href="ocasionford.html" style="color: #e3f2fd;">FORD</a>
+                        <a class="dropdown-item" href="ocasionchevrole.html" style="color: #e3f2fd;">CHEVROLET</a>
+                        <a class="dropdown-item" href="ocasionToyota.html" style="color: #e3f2fd;">TOYOTA</a>
+                       
+                    </li>
+        
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color: #e3f2fd;">Promociones</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #e3f2fd;">
+                        
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: black">
+                        <a class="dropdown-item" href="promocionesford.html" style="color: #e3f2fd;">FORD</a>
+                        <a class="dropdown-item" href="promocioneschevrolet.html" style="color: #e3f2fd;">CHEVROLET</a>
+                        <a class="dropdown-item" href="promocionestoyota.html" style="color: #e3f2fd;">TOYOTA</a>
+                       
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color: #e3f2fd;">Super autos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #e3f2fd;">
+                        
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: black">
+                        <a class="dropdown-item" href="superjetta.html" style="color: #e3f2fd;">JETTA</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="somos.html" style="color: #e3f2fd;">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contactos.html" style="color: #e3f2fd;">Contactos</a>
+                    </li>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: #e3f2fd;">Search</button>
+                  </form>
+                </div>
+              </nav>
+
+              <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <div class="panel panel-default" style=" height: 601px; width: 1366px; left:20px; background-color: black">
+             
+              <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                </ol>
+                <!--/.Indicators-->
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="view">
+                      <img class="d-block w-100" src="chevrolet/carro9.jpg"
+                        alt="First slide"  width="300px" height="600px">
+                      <div class="mask rgba-black-light"></div>
+                    </div>
+                    <div class="carousel-caption">
+                     
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <!--Mask color-->
+                    <div class="view">
+                      <img class="d-block w-100" src="chevrolet/carro10.jpg"
+                        alt="Second slide"  width="300px" height="600px">
+                      <div class="mask rgba-black-strong"></div>
+                    </div>
+                    <div class="carousel-caption">
+                      
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <!--Mask color-->
+                    <div class="view">
+                      <img class="d-block w-100" src="chevrolet/carro11.jpg"
+                        alt="Third slide" width="300px" height="600px">
+                      <div class="mask rgba-black-slight"></div>
+                    </div>
+                    <div class="carousel-caption">
+                      
+                    </div>
+                  </div>
+                </div>
+                <!--/.Slides-->
+                <!--Controls-->
+                <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+                <!--/.Controls-->
+              </div>
+              <div class="panel panel-default" style=" height: 730px; width: 1350px; left:20px; background-color: black">
+              <br>
+              <div class="row">
+                <div class="col-md-2" style="left: 50px;"><img src="chevrolet/carro1.jpg" alt="" class="imagen1">
+                <p style="color: #e3f2fd;" >chevrolet MEX</p>
+                <p style="color: #e3f2fd;">$200.000 MXN</p>
+                <button type="button" onclick="location.href='compracarro.html'" class="btn btn-primary btn-lg btn-block"><center>Comprar</center></button>
+                </div>
+
+                <div class="col-md-2" style="left: 100px;"><img src="chevrolet/carro2.jpg" alt="" class="imagen1">
+                <p style="color: #e3f2fd;" >chevrolet beat</p>
+                <p style="color: #e3f2fd;">$150.000 MXN</p>
+                <button type="button" onclick="location.href='compracarro.html'" class="btn btn-primary btn-lg btn-block"><center>Comprar</center></button>
+                </div>
+
+                <div class="col-md-2" style="left: 200px;"><img src="chevrolet/carro3.jpg" alt="" class="imagen2">
+                  <p style="color: #e3f2fd;" >chevrolet </p>
+                  <p style="color: #e3f2fd;">$175.000 MXN</p>
+                  <button type="button" onclick="location.href='compracarro.html'" class="btn btn-primary btn-lg btn-block"><center>Comprar</center></button>
+                  </div>
+
+                  <div class="col-md-2" style="left: 400px;"><img src="chevrolet/carro4.jpg" alt="" class="imagen1">
+                    <p style="color: #e3f2fd;" >chevrolet </p>
+                    <p style="color: #e3f2fd;">$165.005 MXN</p>
+                    <button type="button" onclick="location.href='compracarro.html'" class="btn btn-primary btn-lg btn-block"><center>Comprar</center></button>
+                    </div>
+              </div>
+              <br>
+              <br>
+              <div class="row">
+                <div class="col-md-2" style="left: 50px;"><img src="chevrolet/carro5.jpg" alt="" class="imagen1">
+                <p style="color: #e3f2fd;" >chevrolet </p>
+                <p style="color: #e3f2fd;">$</p>
+                <button type="button" onclick="location.href='compracarro.html'" class="btn btn-primary btn-lg btn-block"><center>Comprar</center></button>
+                </div>
+
+                <div class="col-md-2" style="left: 100px;"><img src="chevrolet/carro6.jpg" alt="" class="imagen1">
+                <p style="color: #e3f2fd;" >Nulla At Nulla Justo, Eget</p>
+                <p style="color: #e3f2fd;">$400</p>
+                <button type="button" onclick="location.href='compracarro.html'" class="btn btn-primary btn-lg btn-block"><center>Comprar</center></button>
+                </div>
+
+                <div class="col-md-2" style="left: 200px;"><img src="chevrolet/carro7.jpg" alt="" class="imagen2">
+                  <p style="color: #e3f2fd;" >Nulla At Nulla Justo, Eget</p>
+                  <p style="color: #e3f2fd;">$400</p>
+                  <button type="button" onclick="location.href='compracarro.html'" class="btn btn-primary btn-lg btn-block"><center>Comprar</center></button>
+                  </div>
+
+                  <div class="col-md-2" style="left: 400px;"><img src="chevrolet/carro8.jpg" alt="" class="imagen1">
+                    <p style="color: #e3f2fd;" >Nulla At Nulla Justo, Eget</p>
+                    <p style="color: #e3f2fd;">$400</p>
+                    <button type="button" onclick="location.href='compracarro.html'" class="btn btn-primary btn-lg btn-block"><center>Comprar</center></button>
+                    </div>
+              </div>
+              </div>
+</body>
+</html>
